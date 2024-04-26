@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - TuBankapp</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Bienvenidos a TuBankapp, inicie sesión</h2>
+        <form id="inicioSesionForm">
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo" required><br><br>
+            <label for="clave">Clave:</label>
+            <input type="password" id="clave" name="clave" required><br><br>
+
+            <div id="mensajeError" style="color: red; display: none;"></div><br>
+
+            <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script src="inicioSesion.js"></script>
+</body>
+</html>

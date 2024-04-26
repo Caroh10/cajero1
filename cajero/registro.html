@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - TuBankapp</title>
+</head>
+<body>
+    <h2>CREAR PERSONA</h2>
+    <form id="personaForm">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo"><br><br>
+        <label for="clave">Clave (4 dígitos):</label>
+        <input type="password" id="clave" name="clave" minlength="4" maxlength="4"><br><br>
+        <label for="claveRepetida">Repetir Clave:</label>
+        <input type="password" id="claveRepetida" name="claveRepetida" minlength="4" maxlength="4"><br><br>
+
+        <div id="errorClaves" style="color: red; display: none;">Las claves no coinciden.</div>
+
+        <button type="button" onclick="crearPersona()">Crear Persona</button>
+        <br><br><br>
+    </form>
+    <div id="datosRegistro"></div>
+    <div id="resumenRegistro"></div>
+    <button onclick="irAInicioSesion()">Iniciar Sesión</button> 
+
+    <script src="registro.js"></script>
+</body>
+<footer></footer>
+</html>
